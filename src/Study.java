@@ -1,74 +1,24 @@
-import javax.swing.*;
 import java.util.Scanner;
 
 public class Study {
     public static void main(String[] args) {
-
-        /*
-        System.out.println("Teste 1");
-        System.out.println("Teste 2");
-        System.out.println();
-        System.out.println();
-
-        int x = 123; // Inicialização
-        double y = 3.14;
-        boolean z = true;
-        char symbol = '@';
-        String name = "Matheus";
-
-        System.out.println("Olá, "+name+"!\n");
-        System.out.println("Seu outro número é: "+x+"\n");
-        System.out.println("Seu número é: "+y+"\n");
-        System.out.println("Z é uma variável classificada como: "+z+"\n");
-        System.out.println(name+"\n");
-
-        String x1 = "Água";
-        String y1 = "Crystal";
-        String temp;
-
-        temp = x1;
-        x1 = y1;
-        y1 = temp;
-
-        System.out.println("X: "+x1+"\n");
-        System.out.println("Y: "+y1+"\n");
-
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Qual é o seu nome?\n");
 
-        String name1 = scanner.nextLine();
+        System.out.println("Insira o valor do lado x: ");
+        double x = scanner.nextDouble();
+        System.out.println("Insira o valor do lado y: ");
+        double y = scanner.nextDouble();
 
-        System.out.println("Olá, "+name1+"!"+"\n");
-
-        System.out.println("Qual é a sua idade?\n");
-
-        int idade = scanner.nextInt();
-        scanner.nextLine(); // Limpar o Scanner pra retirar o \n!
-
-        System.out.println("A sua idade é: " +idade);
-
-        System.out.println("Qual é a sua comida favorita?");
-
-        String comida = scanner.nextLine();
-
-        // Expressões = operandos e operadores
-        // Operandos = valores, variáveis, números, quantidade
-        // Operadores = + - * / &
-
-        double amigos = 10;
-
-        amigos = amigos / 3;
-
-        System.out.println(amigos); // Valor impossível!
-        */
-
-        String name = JOptionPane.showInputDialog("Escreva seu nome:");
-        JOptionPane.showMessageDialog(null, "Olá " +name+".");
-
-        int age = Integer.parseInt(JOptionPane.showInputDialog("Insira sua idade:"));
-        JOptionPane.showMessageDialog(null, "Você tem " +age+" ano(s).");
-
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Insira sua altura em centímetros:"));
-        JOptionPane.showMessageDialog(null, "Você tem " +height+" centímetros de altura.");
+        double z = Math.sqrt((x * x) + (y * y));
+        double z1 = Math.min(x, y);
+        double z2 = Math.max(x, y);
+        double z3 = Math.abs(y);
+        double z4 = Math.sqrt(y);
+        System.out.println("\nO valor da hipotenusa é: \n" + z);
+        System.out.println("\nO maior valor entre os dois números é: \n" + z2);
+        System.out.println("\nO menor valor entre os dois números é: \n" + z1);
+        System.out.println("\nO valor absoluto de y é: \n" + z3);
+        System.out.println("\nA raíz quadrada de y é: \n" + z4);
+        scanner.close();
     }
 }
