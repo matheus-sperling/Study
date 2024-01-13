@@ -25,7 +25,7 @@ public class Study2 {
             String temp;
 
             temp = x1;
-            x1 = y1;
+            x1 = y1; //Funciona do mesmo jeito!
             y1 = temp;
 
             System.out.println("X: " + x1 + "\n");
